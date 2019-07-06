@@ -9,6 +9,23 @@
 ５．VS Code のインストール  
 ６．VS Code（Debugger for Chrome）のインストール  
 
+## VS Code 設定の共通化
+### 状況  
+VS Codeの設定は settings.json に書き込まれます。
+公式ドキュメントによると、次の場所に配置されるようです。
+```
+%APPDATA%\Code\User\settings.json
+```
+### 方法 (1)
+上記フォルダへのシンボリックリンクを作成
+```
+mklink /d %AppData%\Code\User {VS Code ディレクトリの場所}
+```
+### 方法 (2)
+Settings Sync プラグインを利用する。
+```
+https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
+```
 ## Project setup
 ```
 yarn install
