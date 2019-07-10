@@ -1,7 +1,6 @@
 module.exports = {
   publicPath: './',
-  // Build Path (dist -> doc)
-  outputDir: 'doc',
+  outputDir: 'dist',
   configureWebpack: {
     devtool: 'source-map'
   }
